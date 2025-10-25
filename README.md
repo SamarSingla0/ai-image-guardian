@@ -4,12 +4,7 @@
 
 Users can sign up and log in securely via Firebase Authentication, upload images, and receive instant feedback on whether their content is safe or has been flagged. The application features a modern, responsive user interface and a robust backend that handles the entire moderation workflow.
 
-**Live Demo:** [Link to your deployed project (e.g., on PythonAnywhere, Render)] *(Add this once you deploy it!)*
 
-![AI Image Guardian Dashboard](./path/to/your/screenshot.png)
-*(Replace this with a good screenshot of your dashboard)*
-
----
 
 ## Features
 
