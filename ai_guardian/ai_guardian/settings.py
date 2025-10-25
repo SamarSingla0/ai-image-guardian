@@ -22,9 +22,9 @@ load_dotenv()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'heliochromic-morganatically-lori.ngrok-free.dev']
+ALLOWED_HOSTS = ['127.0.0.1', 'unique1445.pythonanywhere.com']
 
 
 # Application definition
