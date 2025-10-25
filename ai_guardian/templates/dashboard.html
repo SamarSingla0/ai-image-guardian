@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %} {# It's good practice to load static here too, just in case #}
+
+{% block title %}Dashboard - AI Image Guardian{% endblock %}
+
+{% block content %}
+    <header class="app-header">
+        <h1>AI Image Guardian</h1>
+        <div class="user-info">
+            <span id="user-email"></span>
+            <button id="logout-button" class="btn btn-secondary">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Upload Section -->
+        <div class="upload-card">
+            <h2>Upload an Image for Moderation</h2>
+            <p>Drag & drop a file or click to select</p>
+            <div id="drop-zone" class="drop-zone">
+                <input type="file" id="file-input" accept="image/png, image/jpeg, image/gif" hidden>
+                <p>Drop file here or <span class="browse-link">browse</span></p>
+            </div>
+            <div id="progress-container" class="progress-container" style="display: none;">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Image Grid Section -->
+        <h2>Your Uploads</h2>
+        <div id="image-grid" class="image-grid">
+            <!-- Images will be dynamically inserted here -->
+            <p>No images uploaded yet.</p>
+        </div>
+
+        <!-- Pagination Section -->
+        <div id="pagination-controls" class="pagination-controls">
+            <button id="prev-button" class="btn btn-secondary" disabled>Previous</button>
+            <span id="page-indicator">Page 1 of 1</span>
+            <button id="next-button" class="btn btn-secondary" disabled>Next</button>
+        </div>
+    </div>
+{% endblock %}
+

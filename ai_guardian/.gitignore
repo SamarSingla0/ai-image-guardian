@@ -1,0 +1,17 @@
+# Secrets
+.env
+firebase-service-account.json
+
+# Environment
+venv/
+
+# Django & Python stuff
+db.sqlite3
+__pycache__/
+*.pyc
+
+# Media files (user uploads)
+/media/
+
+# Production static files
+/staticfiles/
